@@ -5302,3 +5302,13 @@ textarea:focus-visible {
   display: inline-block;
   padding: 3px 0;
 }
+
+/* Visible form labels (labels must not live only in placeholders) */
+.contact-form .form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--heading-color);
+  margin-bottom: 6px;
+}
