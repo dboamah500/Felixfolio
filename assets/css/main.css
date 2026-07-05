@@ -4267,6 +4267,8 @@ section,
   --nav-dropdown-color: #c4cddc;
   --nav-dropdown-hover-color: #7db2ff;
 
+  --accent-ok: #34d399;
+  --accent-violet: #7c5cff;
   --glass-bg: rgba(255, 255, 255, 0.04);
   --glass-border: rgba(255, 255, 255, 0.09);
   --accent-gradient: linear-gradient(135deg, #4f8dff 0%, #22d3ee 100%);
@@ -4395,7 +4397,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 320px;
   top: 40%;
   left: 45%;
-  background: radial-gradient(circle, rgba(124, 92, 255, 0.28), transparent 65%);
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-violet), transparent 72%), transparent 65%);
   animation-delay: -12s;
 }
 
@@ -4435,7 +4437,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #34d399;
+  background: var(--accent-ok);
   box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
   animation: pulse-dot 2.2s infinite;
   flex-shrink: 0;
