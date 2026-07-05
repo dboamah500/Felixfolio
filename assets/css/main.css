@@ -4651,9 +4651,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .exp-card .exp-photo img {
   width: 100%;
-  height: 240px;
+  height: 300px;
   object-fit: cover;
-  object-position: 50% 35%;
+  object-position: 50% 68%; /* keep Felix and the Intel sign in frame */
   display: block;
   transition: transform 0.5s ease;
 }
@@ -5182,12 +5182,6 @@ h1, h2, h3, h4, h5, h6 {
   .community-gallery .g-tile { height: 220px; }
 }
 
-/* Experience photo crop: keep Felix and the Intel sign in frame */
-.exp-card .exp-photo img {
-  height: 300px;
-  object-position: 50% 68%;
-}
-
 /* Mobile hardening: no horizontal overflow, compact header */
 html, body {
   overflow-x: clip;
@@ -5233,4 +5227,34 @@ html, body {
     font-size: 12px;
     margin-left: 8px;
   }
+}
+
+/* Premium finishing details */
+::selection {
+  background: color-mix(in srgb, var(--accent-color), transparent 60%);
+  color: #fff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.scroll-top {
+  background: var(--accent-gradient);
+  box-shadow: 0 8px 24px rgba(79, 141, 255, 0.4);
+}
+
+.scroll-top:hover {
+  filter: brightness(1.1);
+}
+
+.venture-card .venture-media a {
+  display: block;
+  height: 100%;
+  cursor: zoom-in;
 }
