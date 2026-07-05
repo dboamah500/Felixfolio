@@ -4272,6 +4272,7 @@ section,
   --glass-bg: rgba(255, 255, 255, 0.04);
   --glass-border: rgba(255, 255, 255, 0.09);
   --accent-gradient: linear-gradient(135deg, #4f8dff 0%, #22d3ee 100%);
+  --accent-gradient-strong: linear-gradient(135deg, #2e6de8 0%, #0784a6 100%); /* AA contrast with white text */
 }
 
 .light-background {
@@ -5311,4 +5312,12 @@ textarea:focus-visible {
   letter-spacing: 0.02em;
   color: var(--heading-color);
   margin-bottom: 6px;
+}
+
+/* White text sits on the darker gradient so body-size labels pass WCAG AA */
+.btn-hero.primary,
+.header .btn-getstarted,
+.scholar-btn,
+.services .cta-box {
+  background: var(--accent-gradient-strong);
 }
