@@ -5076,3 +5076,161 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form button[type="submit"] i {
   margin-left: 6px;
 }
+
+/* Accessibility: never hide content behind scroll animations for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Community & Advocacy */
+.community-points h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.community-points ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.community-points li {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.community-points li i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 17px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  flex-shrink: 0;
+}
+
+.community-points li strong {
+  color: var(--heading-color);
+}
+
+.community-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.community-gallery .g-tile {
+  position: relative;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  height: 250px;
+}
+
+.community-gallery .g-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.community-gallery .g-tile:hover img {
+  transform: scale(1.05);
+}
+
+.community-gallery .g-tile .tile-caption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(6, 10, 20, 0.72);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+}
+
+.community-gallery .g-tile .tile-caption i {
+  color: var(--accent-2);
+}
+
+@media (max-width: 575px) {
+  .community-gallery { grid-template-columns: 1fr; }
+  .community-gallery .g-tile { height: 220px; }
+}
+
+/* Experience photo crop: keep Felix and the Intel sign in frame */
+.exp-card .exp-photo img {
+  height: 300px;
+  object-position: 50% 68%;
+}
+
+/* Mobile hardening: no horizontal overflow, compact header */
+html, body {
+  overflow-x: clip;
+}
+
+@media (max-width: 767px) {
+  .header .logo .sitename { font-size: 16px; }
+  .header .logo .logo-mark { width: 32px; height: 32px; font-size: 13px; }
+  .header .btn-getstarted { padding: 7px 16px; font-size: 13px; }
+  .hero .hero-title { overflow-wrap: break-word; }
+}
+
+/* Mobile min-width guards: keep long unbreakable strings (emails, URLs)
+   from forcing the layout viewport wider than the screen */
+.details-grid .detail-item,
+.hero .hero-stats .stat,
+.research-impact .metric,
+.profile-stats .stat-item {
+  min-width: 0;
+}
+
+.detail-item .detail-content strong,
+.contact .info-item p,
+.footer-contact p,
+.pub-card h4 {
+  overflow-wrap: anywhere;
+}
+
+/* Header shrink guard: keep min-content width under narrow viewports */
+.header .logo {
+  min-width: 0;
+}
+
+.header .logo .sitename {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 429px) {
+  .header .btn-getstarted {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+}

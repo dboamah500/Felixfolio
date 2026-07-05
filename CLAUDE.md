@@ -65,8 +65,11 @@ development, RCA, HVM) → Research (biomaterials, nanotech, 3D bioprinting, ele
 additive manufacturing, characterization; metrics + Google Scholar button) → Skills
 (categorized cards, no progress bars: Semiconductor / Research / Programming / Data /
 Lab / Leadership / Operations / Business; tools: Python, SQL, Tableau, OriginLab, R,
-ImageJ, MS Office) → Awards → Entrepreneurship (GRADCAB, Inested) → Publications →
-Contact (email, phone, LinkedIn, Scholar, location, socials).
+ImageJ, MS Office) → Awards → Entrepreneurship (GRADCAB, Inested) → Community & Advocacy
+(mentoring, teaching math in underserved communities, judging competitions, civic
+engagement; photo gallery with GLightbox) → Publications (4 real papers with links;
+Scholar profile: https://scholar.google.com/citations?user=eHQKo_YAAAAJ) →
+Contact (email, phone, LinkedIn, Scholar, location, socials; static mailto form — NO PHP).
 
 ## Assets in `img/` (real, on disk — always reuse, never duplicate)
 
