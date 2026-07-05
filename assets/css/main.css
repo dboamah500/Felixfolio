@@ -5221,7 +5221,7 @@ html, body {
   text-overflow: ellipsis;
 }
 
-@media (max-width: 429px) {
+@media (max-width: 575px) {
   .header .btn-getstarted {
     padding: 6px 12px;
     font-size: 12px;
