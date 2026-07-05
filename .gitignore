@@ -1,0 +1,4 @@
+qa-*.html
+.gstack/
+.DS_Store
+img/.DS_Store
