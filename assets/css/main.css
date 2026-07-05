@@ -5270,3 +5270,22 @@ textarea:focus-visible {
 @media (max-width: 575px) {
   .community-gallery .g-tile.wide { grid-column: span 1; height: 220px; }
 }
+
+/* Reduced motion: also suppress hover transforms and image zooms */
+@media (prefers-reduced-motion: reduce) {
+  .research-chip:hover,
+  .skill-card:hover,
+  .award-card:hover,
+  .pub-card:hover,
+  .venture-card:hover,
+  .btn-hero:hover,
+  .header .btn-getstarted:hover,
+  .scholar-btn:hover {
+    transform: none;
+  }
+
+  .exp-card:hover .exp-photo img,
+  .community-gallery .g-tile:hover img {
+    transform: none;
+  }
+}
