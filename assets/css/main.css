@@ -5258,3 +5258,13 @@ textarea:focus-visible {
   height: 100%;
   cursor: zoom-in;
 }
+
+/* Community gallery mosaic: wide tiles span both columns */
+.community-gallery .g-tile.wide {
+  grid-column: span 2;
+  height: 280px;
+}
+
+@media (max-width: 575px) {
+  .community-gallery .g-tile.wide { grid-column: span 1; height: 220px; }
+}
