@@ -5289,3 +5289,16 @@ textarea:focus-visible {
     transform: none;
   }
 }
+
+/* Touch targets: 44px scroll-top, breathing room on text links */
+.scroll-top {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+
+.footer .footer-links ul a,
+.contact .info-item p a {
+  display: inline-block;
+  padding: 3px 0;
+}
