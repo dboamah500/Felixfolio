@@ -5321,3 +5321,81 @@ textarea:focus-visible {
 .services .cta-box {
   background: var(--accent-gradient-strong);
 }
+
+/* Pill navbar: floating glass pill with rounded active state (desktop) */
+.mobile-nav-toggle {
+  background: none;
+  border: 0;
+  padding: 4px;
+}
+
+@media (min-width: 1200px) {
+  .navmenu > ul {
+    background: rgba(10, 16, 29, 0.55);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 999px;
+    padding: 6px;
+    gap: 2px;
+  }
+
+  .navmenu > ul > li {
+    padding: 0;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 9px 17px;
+    border-radius: 999px;
+    font-size: 14.5px;
+    font-weight: 500;
+  }
+
+  .navmenu li:last-child a {
+    padding-right: 17px;
+  }
+
+  .navmenu > ul > li:hover > a {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--heading-color);
+  }
+
+  .navmenu > ul > li > a.active {
+    background: color-mix(in srgb, var(--accent-color), transparent 82%);
+    color: var(--nav-hover-color);
+  }
+
+  /* Dropdown panel: glass card */
+  .navmenu .dropdown ul {
+    background: rgba(8, 13, 24, 0.92);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 20px 50px rgba(2, 6, 16, 0.6);
+  }
+
+  .navmenu .dropdown ul a {
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .navmenu .dropdown ul a:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--nav-hover-color);
+  }
+}
+
+/* Header on scroll: dark glass instead of template gray */
+.index-page.scrolled .header {
+  --background-color: rgba(6, 10, 20, 0.72);
+}
+
+.scrolled .header {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 4px 30px rgba(2, 6, 16, 0.45);
+}
