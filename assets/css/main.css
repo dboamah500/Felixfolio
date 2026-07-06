@@ -3586,7 +3586,8 @@ section,
   letter-spacing: 0.5px;
 }
 
-.privacy .policy-hero h1 {
+.privacy .policy-hero h1,
+.privacy .policy-hero .policy-title {
   font-size: 3rem;
   color: var(--heading-color);
   margin-bottom: 20px;
@@ -3978,7 +3979,8 @@ section,
     margin-bottom: 40px;
   }
 
-  .privacy .policy-hero h1 {
+  .privacy .policy-hero h1,
+.privacy .policy-hero .policy-title {
     font-size: 2.2rem;
   }
 
@@ -4298,16 +4300,23 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.015em;
 }
 
-/* Section titles: the base sets a thin 300 weight — go bold and tight */
+/* Section titles: the base sets a thin 300 weight — go big, bold, and tight */
 .section-title h2 {
   font-weight: 740;
+  font-size: clamp(2.75rem, 5.5vw, 4.5rem);
+  line-height: 1.08;
   letter-spacing: -0.02em;
 }
 
 .section-title .subtitle {
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.section-title p:not(.subtitle) {
+  font-size: 1.15rem;
 }
 
 /* Body copy slightly heavier for a confident, premium read */
@@ -4363,6 +4372,8 @@ p {
   font-size: 19px;
   font-weight: 600;
   letter-spacing: -0.02em;
+  color: var(--heading-color);
+  margin: 0;
 }
 
 .header .logo .logo-dot {
