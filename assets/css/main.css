@@ -4250,9 +4250,9 @@ section,
 
 /* Design tokens — white theme */
 :root {
-  --default-font: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --heading-font: "Fraunces", "Geist", serif;
-  --nav-font: "Geist", sans-serif;
+  --default-font: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Fraunces", serif;
+  --nav-font: "Hanken Grotesk", sans-serif;
 
   --background-color: #ffffff;
   --default-color: #3d4a63;

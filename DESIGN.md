@@ -12,9 +12,9 @@
 
 ## Typography
 - **Display/Headings:** Fraunces (variable serif, optical size 9–144, weight 300–900, italics) — unique, elegant, "fancy" without being frivolous. Weight 700 default, section titles 740, letter-spacing −0.015 to −0.02em.
-- **Body/UI/Nav:** Geist (variable, 300–800) — Swiss-clean counterpoint to the serif. Body weight 450, color `#3d4a63` (blue-slate), letter-spacing −0.01em.
+- **Body/UI/Nav:** Hanken Grotesk (variable, 100–900) — warm, tall-x-height grotesque; more designed than Swiss-default sans. Body weight 450, color `#3d4a63` (blue-slate), letter-spacing −0.01em. (Replaced Geist 2026-07-06 — owner found it generic.)
 - **Fancy accents:** `.gradient-text` spans render in Fraunces *italic* with the blue gradient — reserved for hero keywords and stat numbers.
-  - Loading: `https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap`
+  - Loading: `https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap`
 - **Do not use:** Inter, Roboto, Space Grotesk, Raleway, Mulish (removed; overused or blacklisted).
 
 ## Color
@@ -55,5 +55,6 @@
 | 2026-07-06 | Social icons wear official brand colors (LinkedIn #0a66c2, Scholar #4285f4, Instagram #d62976 + gradient hover, Facebook #1877f2, WhatsApp #25d366, Email #ea4335); WhatsApp link added via wa.me | Owner request; the one sanctioned departure from the blue-only accent rule |
 | 2026-07-06 | Fraunces serif display + italic gradient accents; all neutrals shifted to blue shades | Owner: "blue and shades of blue premium, bold texts, unique font type, fancy writing style" |
 | 2026-07-06 | Footer text bold (600–700) and blue: name/headings in accent `#0b5cd8`, links/body in blue-slate `#2f4d80`, copyright strip `#f2f6fc` | Owner: "footer should be bold and blue colored text" |
+| 2026-07-06 | Body/UI font: Geist → Hanken Grotesk | Owner: body font felt generic; Hanken is warmer and more distinctive while staying professional |
 | 2026-07-06 | Section titles at poster scale: clamp(2.75rem, 5.5vw, 4.5rem), weight 740; hero title is the page h1, logo wordmark demoted to <p> | Owner: "section heads big and visible enough"; /qa heading-semantics fix |
 | 2026-07-06 | Gallery section added (isotope masonry, filters: Community/Projects/Personal/Video, GLightbox images + local mp4, blue pill filters); isotope + imagesloaded vendor scripts restored to index.html | Owner request: gallery for outreach, projects, personal pictures, videos |

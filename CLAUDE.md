@@ -24,7 +24,7 @@ do not rewrite working code or swap frameworks.
 
 **White theme** (as of 2026-07-06): premium, minimal, memorable — reference points: Apple,
 Vercel, Stripe, Linear, Intel. White ground, blue-shaded neutrals, bold Fraunces serif
-display + Geist body, one blue accent family, blue-pill CTAs, blue hairline card borders,
+display + Hanken Grotesk body, one blue accent family, blue-pill CTAs, blue hairline card borders,
 brand-colored social icons, subtle motion, generous clean
 spacing. Always read `DESIGN.md` before making any visual or UI decision — fonts, colors,
 spacing, and direction are defined there; do not deviate without explicit user approval.
