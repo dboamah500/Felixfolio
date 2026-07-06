@@ -5587,7 +5587,7 @@ textarea:focus-visible {
 
 .social-links a[aria-label="WhatsApp"],
 .social-connect a[aria-label="WhatsApp"] {
-  color: #1da851;
+  color: #128a43;
   background: color-mix(in srgb, #25d366, transparent 88%);
   border-color: color-mix(in srgb, #25d366, transparent 65%);
 }
@@ -5608,7 +5608,7 @@ textarea:focus-visible {
 
 .social-links a[aria-label="Instagram"]:hover,
 .social-connect a[aria-label="Instagram"]:hover {
-  background: linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
+  background: linear-gradient(45deg, #e08e2b 0%, #d62976 45%, #6228d7 100%);
   color: #fff;
   border-color: #ee2a7b;
 }
