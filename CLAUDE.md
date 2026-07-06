@@ -22,11 +22,16 @@ do not rewrite working code or swap frameworks.
 
 ## Design language
 
-Premium, minimal, memorable — reference points: Apple, Vercel, Stripe, Linear, Framer,
-Intel, Nvidia. Use soft gradients, tasteful glassmorphism, smooth transitions, subtle
-motion, modern typography, generous clean spacing. Avoid generic-template look, stock
-clichés, and heavy skill progress bars. The site should read instantly as:
-*"accomplished semiconductor engineer and research leader."*
+**White theme** (as of 2026-07-06): premium, minimal, memorable — reference points: Apple,
+Vercel, Stripe, Linear, Intel. White ground, blue-shaded neutrals, bold Fraunces serif
+display + Geist body, one blue accent family, blue-pill CTAs, blue hairline card borders,
+brand-colored social icons, subtle motion, generous clean
+spacing. Always read `DESIGN.md` before making any visual or UI decision — fonts, colors,
+spacing, and direction are defined there; do not deviate without explicit user approval.
+Avoid generic-template look, stock clichés, and heavy skill progress bars. The site should
+read instantly as: *"accomplished semiconductor engineer and research leader."*
+The owner rejects concept-heavy/gimmicky design (spec-table heroes, monospace-everywhere,
+lab-metaphor decoration); show design changes on the real `index.html`, not mockup pages.
 Audience: Intel leadership, NVIDIA, TSMC, ASML, Applied Materials, Lam Research, KLA,
 research institutions, investors, startup collaborators.
 
@@ -67,18 +72,21 @@ additive manufacturing, characterization; metrics + Google Scholar button) → S
 Lab / Leadership / Operations / Business; tools: Python, SQL, Tableau, OriginLab, R,
 ImageJ, MS Office) → Awards → Entrepreneurship (GRADCAB, Inested) → Community & Advocacy
 (mentoring, teaching math in underserved communities, judging competitions, civic
-engagement; photo gallery with GLightbox) → Publications (4 real papers with links;
+engagement; photo gallery with GLightbox) → Gallery (isotope-filtered: Community /
+Projects / Personal / Video; GLightbox images + local video) → Publications (4 real papers with links;
 Scholar profile: https://scholar.google.com/citations?user=eHQKo_YAAAAJ) →
 Contact (email, phone, LinkedIn, Scholar, location, socials; static mailto form — NO PHP).
 
 ## Assets in `img/` (real, on disk — always reuse, never duplicate)
 
-- `felix-portrait.jpg` — studio headshot, **hero image**
-- `felix-about.jpg` — blue-suit portrait, About section
-- `felix-intel.jpg` — Felix at Intel Gordon Moore Park, Experience/Intel
+- `Hero.jpeg` — blue-suit studio portrait, **hero image**
+- `social.jpeg` — circular About-card portrait (also OG/Twitter image)
+- `work.jpeg` — Felix at Intel Gordon Moore Park, Experience/Intel
 - `felix-speaking.jpg` — speaking at podium, Entrepreneurship/GRADCAB
-- `felix-community.jpg`, `felix-mentorship.jpg` — community & mentorship imagery
-- `felix-office.jpg` — casual office shot, gallery/secondary use
+- `felix-community.jpg`, `felix-event.jpg`, `felix-mentorship-group.jpg`,
+  `felix-mentorship-group2.jpg`, `felix-lab-bw.jpg` — community/mentorship gallery
+- `felix-casual.jpg`, `felix-collage.jpg`, `felix-event-2.jpg`, `felix-office.jpg`,
+  `felix-video.mp4` — Gallery section (Personal/Community/Video tiles)
 - `Felix-Tettey-Engmann-Resume.docx` (and `.pdf` if generated) — Resume download button target
 - SEO: keep title/description/OG/Twitter/JSON-LD in `index.html` head in sync with content
 
